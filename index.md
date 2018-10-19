@@ -6,19 +6,19 @@ layout: home
 
 At the default sizing level, these are the font and point sizes iOS assigns:
 
-| Style        | Font               | Size | 
-| ------------ | ------------------ | ---- | 
-| .largeTitle  | SFUIDisplay       | 34.0 | 
-| .title1      | SFUIDisplay <br> (-Light on iOS <=10) | 28.0 |
-| .title2      | SFUIDisplay       | 22.0 |
-| .title3      | SFUIDisplay       | 20.0 |
-| .headline    | SFUIText-Semibold | 17.0 |
-| .callout     | SFUIText          | 16.0 |
-| .subheadline | SFUIText          | 15.0 |
-| .body        | SFUIText          | 17.0 |
-| .footnote    | SFUIText          | 13.0 |
-| .caption1    | SFUIText          | 12.0 |
-| .caption2    | SFUIText          | 11.0 |
+| Style          | Size | Font              |
+| -------------- | ---- | ----------------- |
+| .largeTitle  | 34.0 | SFUIDisplay       | 
+| .title1      | 28.0 | SFUIDisplay (-Light on iOS ≤10) |
+| .title2      | 22.0 | SFUIDisplay       | 
+| .title3      | 20.0 | SFUIDisplay       | 
+| .headline    | 17.0 | SFUIText-Semibold | 
+| .callout     | 16.0 | SFUIText          | 
+| .subheadline | 15.0 | SFUIText          | 
+| .body        | 17.0 | SFUIText          | 
+| .footnote    | 13.0 | SFUIText          | 
+| .caption1    | 12.0 | SFUIText          | 
+| .caption2    | 11.0 | SFUIText          | 
 
 You can read more, including about the accessibility curves, on [Apple's documentation](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography). 
 
