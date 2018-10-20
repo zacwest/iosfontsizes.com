@@ -10,7 +10,6 @@ github_username:  zacwest
 
 # Build settings
 markdown: kramdown
-theme: minima
 
 exclude:
   - Gemfile

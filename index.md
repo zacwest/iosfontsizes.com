@@ -1,10 +1,8 @@
 ---
-layout: home
+layout: base
 ---
 
-<a href="https://github.com/zacwest/iosfontsizes.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
-
-At the default sizing level, these are the font and point sizes iOS assigns:
+Below are the font and point sizes used by iOS at the default sizing level. You can read more, including about the accessibility curves, on [Apple's documentation](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography).
 
 | Style          | Size | Font              |
 | -------------- | ---- | ----------------- |
@@ -20,9 +18,7 @@ At the default sizing level, these are the font and point sizes iOS assigns:
 | .caption1    | 12.0 | SFUIText          | 
 | .caption2    | 11.0 | SFUIText          | 
 
-You can read more, including about the accessibility curves, on [Apple's documentation](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography). 
-
-Use the style with code like:
+Use the style like:
 
 ```swift
 label.font = UIFont.preferredFont(forTextStyle: .body)
@@ -33,4 +29,15 @@ If you want to modify the font size a little bit, dynamically change it like:
 ```swift
 let desc = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body)
 label.font = UIFont.systemFont(ofSize: desc.pointSize - 1.0, weight: .regular)
+```
+
+Get dynamic type scaling with a custom font like:
+
+```swift
+// you can also hard-code point sizes per style, if Apple's are far off
+let desc = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body)
+let baseFont = UIFont(name: "Avenir", size: desc.pointSize)!
+
+let metrics = UIFontMetrics(forTextStyle: .body)
+metrics.scaledFont(for: baseFont)
 ```
