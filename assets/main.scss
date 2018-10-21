@@ -2,57 +2,66 @@
 ---
 
 body {
-	margin: 0;
+  margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-    p, td, th {
-        font-size: 1.1em;
-    }
 }
+
 div#content { 
 	max-width: 800px;
 	margin: 0 auto;
-    padding: 0 1em;
+  padding: 0 1em;
 }
-table {
-    border-collapse: collapse;
 
-    td, th {
-    	padding: .3em;
-    	border: 1px solid #aaa;	
-    	text-align: left;
-    }
-    tr:nth-child(even) {
+table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+
+  td, th {
+  	padding: .5em;
+   	text-align: left;
+  }
+
+  tr:nth-child(even) {
 		background-color: #ededed;
 	}
+
 	th {
-		background-color: #ccc;
+		background-color: #eee;
+    border-bottom: 1px solid #ddd;
 	}
-}
-code, pre {
+
+  td {
     font-family: "Menlo",monospace;
+  }
 }
+
+code, pre {
+  font-family: "Menlo",monospace;
+}
+
+.highlighter-rouge {
+  background: #eef;
+  border-radius: 2px;
+}
+
 pre {
-    padding: 0.4em;
-    white-space: pre;
-    word-wrap: none;
-    overflow-x: scroll;
+  padding: 0.5em;
+  white-space: pre;
+  word-wrap: none;
+  overflow-x: scroll;
 }
+
 footer {
 	text-align: center;
 	border-top: 1px solid #ccc;
+  margin-top: 2em;
 }
 
 /**
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff;
-
-  .highlighter-rouge & {
-    background: #eef;
-  }
-
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error
   .k     { font-weight: bold } // Keyword
