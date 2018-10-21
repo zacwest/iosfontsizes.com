@@ -1,12 +1,14 @@
 title: iOS Font Sizes
 email: 
-author: Zac West
-description: >- # this means to ignore newlines until "baseurl:"
+author: zacwest
+description: >-
   Preferred font sizes on iOS devices
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: zacwest
-github_username:  zacwest
+baseurl: ""
+url: ""
+
+twitter:
+  username: zacwest
+  card: summary
 
 # Build settings
 markdown: kramdown
@@ -19,3 +21,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - README.md
+  - LICENSE

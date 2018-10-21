@@ -1,6 +1,3 @@
----
----
-
 body {
   margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -58,9 +55,6 @@ footer {
   margin-top: 2em;
 }
 
-/**
- * Syntax highlighting styles
- */
 .highlight {
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error
