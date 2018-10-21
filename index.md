@@ -20,7 +20,7 @@ Below are the font and point sizes used by iOS at the default sizing level. You 
 
 ## Usage
 
-Use the automatically-adjusted dynamic type fonts where available. Instead of creating a `UIFont` directly, use `preferredFont(forTextStyle:)` or `scaledFont(for:)`.
+Use `preferredFont(forTextStyle:)` or `scaledFont(for:)` with the `UIFont.TextStyle` constants instead of hard-coding font values in your code.
 
 ```swift
 // update when the user changes their settings

@@ -1,6 +1,7 @@
 body {
   margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.33em;
 }
 
 div#content { 
@@ -19,13 +20,8 @@ table {
    	text-align: left;
   }
 
-  tr:nth-child(even) {
-		background-color: #ededed;
-	}
-
-	th {
-		background-color: #eee;
-    border-bottom: 1px solid #ddd;
+  tr:nth-child(odd) {
+		background-color: #F9EDED;
 	}
 
   td {
@@ -38,7 +34,7 @@ code, pre {
 }
 
 .highlighter-rouge {
-  background: #eef;
+  background: #EFEFFF;
   border-radius: 2px;
 }
 
