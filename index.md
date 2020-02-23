@@ -31,7 +31,11 @@ label.font = UIFont.preferredFont(forTextStyle: .body)
 You can use a modified version of the font with the same scaling:
 
 ```swift
-// use a 16.0 font instead of 17.0 for body, at normal sizing
+// for a custom font at the normal scaling
+let adjustedFont = UIFont(name: "AmericanTypewriter", size: 17.0)
+
+// for the system font, but starting at a different default point size
+// this point size value must be defined as a constant, see below
 let adjustedFont = UIFont.systemFont(ofSize: 16.0, weight: .regular)
 
 // use the scaled font version so it still updates automatically
@@ -39,4 +43,4 @@ label.adjustsFontForContentSizeCategory = true
 label.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: adjustedFont)
 ```
 
-This will give you a body point with the default size at `16.0`. To use a different font family, change the `systemFont(ofSize:weight:)` call.
+**NOTE:** The current point size from `preferredFont(forTextStyle:)` already includes scaling. Using it as the starting point will produce double-scaled fonts at ridiculous point sizes.
