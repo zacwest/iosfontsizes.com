@@ -8,10 +8,17 @@ body {
   line-height: 1.33em;
 }
 
-div#content { 
+div#content {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+a {
+  color: blue;
+  @media (prefers-color-scheme: dark) {
+    color: lightblue;
+  }
 }
 
 table {

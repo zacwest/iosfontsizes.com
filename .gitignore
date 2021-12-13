@@ -5,3 +5,6 @@ _site/
 .jekyll-metadata
 vendor/
 .bundle
+
+# Local Netlify folder
+.netlify
