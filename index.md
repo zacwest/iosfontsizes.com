@@ -7,7 +7,7 @@ layout: base
 Below are the font and point sizes used by iOS at the default sizing level. You can read more, including about the accessibility curves, on [Apple's documentation](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography).
 
 | .extraLargeTitle<br><small>iOS 17</small>  | **36.0** | SFUI-Bold |
-| .extraLargetitle2<br><small>iOS 17</small> | **28.0** | SFUI-Bold |
+| .extraLargeTitle2<br><small>iOS 17</small> | **28.0** | SFUI-Bold |
 | .largeTitle       | **34.0** | SFUI-Regular  | 
 | .title1           | **28.0** | SFUI-Regular  | 
 | .title2           | **22.0** | SFUI-Regular  | 
